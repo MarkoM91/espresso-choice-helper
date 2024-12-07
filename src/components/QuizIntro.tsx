@@ -7,7 +7,7 @@ interface QuizIntroProps {
 
 export function QuizIntro({ onStartQuiz }: QuizIntroProps) {
   return (
-    <div className="bg-coffee-cream/20 p-8 rounded-xl my-12 text-center">
+    <div className="bg-coffee-cream/20 p-8 rounded-xl text-center max-w-4xl mx-auto">
       <h2 className="text-3xl font-semibold text-[#4A2512] mb-4">
         Not sure if this is the right machine for you?
       </h2>

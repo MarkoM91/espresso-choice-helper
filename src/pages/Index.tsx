@@ -4,7 +4,6 @@ import { QuizOption } from "@/components/QuizOption";
 import { ProductCard } from "@/components/ProductCard";
 import { questions, products } from "@/data/quizData";
 import { QuizIntro } from "@/components/QuizIntro";
-import { ArticleContent } from "@/components/ArticleContent";
 
 export default function Index() {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -75,7 +74,7 @@ export default function Index() {
               onClick={handleRestart}
               className="text-coffee-medium hover:text-coffee-dark underline"
             >
-              Back to Article
+              Take Quiz Again
             </button>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -135,7 +134,6 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 animate-fade-in">
-      <ArticleContent />
       <QuizIntro onStartQuiz={() => setShowQuiz(true)} />
     </div>
   );
